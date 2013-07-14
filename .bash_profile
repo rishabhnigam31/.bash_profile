@@ -1,0 +1,12 @@
+alias ab='/home/engshare/devtools/arcanist/bin/arc build'
+alias up='git fetch; git svn rebase; ab'
+function new { git checkout -b $1 trunk; up; }
+alias com='git commit -a'
+alias acom='git commit -a --amend'
+alias sw='git checkout'
+alias 'git st'='git status'
+alias 'git br'='git branch'
+alias ad='/home/engshare/devtools/arcanist/bin/arc diff'
+alias sm='/home/engshare/devtools/arcanist/bin/arc amend; git svn dcommit'
+alias cont='git rebase --continue'
+alias del='sw master; git branch -D'
